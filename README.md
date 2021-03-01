@@ -15,5 +15,4 @@ For information on how to contribute see the [Contribution guidelines](contribut
 
 ## Credits
 
-- [LeonMrBonnie](https://github.com/LeonMrBonnie) - Writer of this guide
 - [The altMP Team](https://github.com/altmp) - For creating the C++ Module SDK
