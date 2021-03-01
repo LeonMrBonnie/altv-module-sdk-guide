@@ -36,6 +36,9 @@ It is possible to both write a server and a client module. Many things are exact
 directories.
 Because the API is mainly the same, much of your code can be reused so it is possible to write your module in a single project that works for both the server- and the clientside.
 
+> [!TIP]
+> To create a module that can be used on both sides, the defines `ALT_SERVER_API` and `ALT_CLIENT_API` can be used to check which side the module is currently being run on.
+
 ## How to use the Module SDK
 
 As stated in the last section, including the Module SDK in your project is very easy as the SDK only consists of header files.
@@ -56,7 +59,8 @@ If you want to use the Module SDK but can not or don't want to use C++, but inst
 then you can use the [C Bindings Generator](https://github.com/7Hazard/altv-capi) by Hazard.
 The wrapper autogenerates C bindings for the C++ SDK and provides the ability to use the SDK from any language that supports C FFI.
 
-The guide will assume that the SDK is used from C++ directly, when the C Wrapper is used there will be some changes needed, but the general concepts stay the same.
+> [!TIP]
+> The guide will assume that the SDK is used from C++ directly, when the C Wrapper is used there will be some changes needed, but the general concepts stay the same.
 
 ## The next steps
 
