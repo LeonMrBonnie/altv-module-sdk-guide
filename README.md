@@ -11,7 +11,7 @@ A guide for the usage of the [alt:V C++ Module SDK](https://github.com/altmp/cpp
 
 Contributions are always appreciated.
 
-For information on how to contribute see the [Contribution guidelines](contribution-guidelines.md).
+For information on how to contribute see the [Contribution guidelines](contributing.md).
 
 ## Credits
 
