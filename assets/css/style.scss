@@ -1,6 +1,3 @@
----
----
-
 $header-bg-color: hsl(4deg, 100%, 45%);
 $header-bg-color-secondary: hsl(25deg, 100%, 45%);
 
@@ -29,6 +26,7 @@ $body-link-color: hsl(4deg, 100%, 55%);
   .page-header {
     background-color: $dark-header-bg-color;
     background-image: linear-gradient(120deg, $dark-header-bg-color-secondary, $dark-header-bg-color);
+    padding: 2rem 6rem;
   }
   
   .btn {
