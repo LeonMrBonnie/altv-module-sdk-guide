@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome to the guide for the alt:V C++ Module SDK! This guide will teach you the basics on how to write your own alt:V scripting module
+Welcome to the guide for the alt:V C++ Module SDK! This guide will teach you the basics of how to write your own alt:V scripting module
 and will explain important concepts and other good-to-know things for the SDK.
 
 ## Table of Contents
@@ -21,14 +21,14 @@ Listed here are the requirements for working through this guide:
 - Basic Knowledge of Git
 - A text editor or IDE
 
-If you fulfill all of these requirements you are ready to go to the next section. It is recommended to fulfill all of these requirements before proceding, though.
+If you fulfill all of these requirements you are ready to go to the next section. It is recommended to fulfill all of these requirements before proceeding, though.
 
 ## What is the Module SDK
 
 The Module SDK is the primary SDK for you to create your module with and interact with the alt:V server or client.
-With it you can write a scripting module to add a new scripting language to alt:V.
+With it, you can write a scripting module to add a new scripting language to alt:V.
 
-The SDK is available as a header only library for you to include in your project, the actual code for the SDK lies in the alt:V core and as such is not open source.
+The SDK is available as a header-only library for you to include in your project, the actual code for the SDK lies in the alt:V core and as such is not open source.
 So it is very easy to use the SDK, as you only need to include the needed headers in your project and the classes and methods inside the headers can then be used,
 once your module is injected into the client or server.
 
@@ -49,8 +49,8 @@ The next step is to include the header files in your project somewhere. You can 
 ```
 
 And that's it! Now you can use the classes and methods provided by the SDK. Don't forget to include this header in a common header file of your project,
-or include it in every file invidually.
-Of course you can also just only include the header files that you currently need.
+or include it in every file individually.
+Of course, you can also just only include the header files that you currently need.
 
 ## How to use the Module SDK from C or languages that support C code
 
