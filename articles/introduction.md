@@ -2,6 +2,7 @@
 
 Welcome to the alt:V C++ Module SDK guide! This guide will teach you the basics on how to write your own alt:V scripting module and will explain important concepts and other good-to-know things for the SDK.
 
+
 ## Table of Contents
 
 1. [Requirements](#requirements)
@@ -25,9 +26,9 @@ If you fulfill all of these requirements you are ready to go to the next section
 ## What is the Module SDK
 
 The Module SDK is the primary SDK for you to create your module with and interact with the alt:V server or client.
-With it you can write a scripting module to add a new scripting language to alt:V.
+With it, you can write a scripting module to add a new scripting language to alt:V.
 
-The SDK is available as a header only library for you to include in your project, the actual code for the SDK lies in the alt:V core and as such is not open source.
+The SDK is available as a header-only library for you to include in your project, the actual code for the SDK lies in the alt:V core and as such is not open source.
 So it is very easy to use the SDK, as you only need to include the needed headers in your project and the classes and methods inside the headers can then be used,
 once your module is injected into the client or server.
 
