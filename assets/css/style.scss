@@ -22,8 +22,8 @@ $body-link-color: hsl(4deg, 100%, 55%);
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: #181818;
-    color: #bac1c4;
+    background: ##1F1F1F;
+    color: ##F1F2F2;
   }
   
   .page-header {
@@ -51,7 +51,7 @@ $body-link-color: hsl(4deg, 100%, 55%);
   .main-content h4,
   .main-content h5,
   .main-content h6 {
-    color: #ff6a33;
+    color: #008736;
   }
   
   a {
@@ -87,5 +87,9 @@ $body-link-color: hsl(4deg, 100%, 55%);
   
   .main-content pre > code {
     color: hsl(199deg, 56%, 73%);
+  }
+  
+  .main-content {
+    font-size: 1rem; 
   }
 }
