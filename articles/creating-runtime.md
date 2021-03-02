@@ -2,7 +2,7 @@
 
 This article will explain how to create your own script runtime class.
 
-The script runtime class is be the main class used so that the alt:V core can communicate with your module.
+The script runtime class is the main class used by the alt:V core to communicate with your module.
 
 ## Table of Contents
 
