@@ -81,7 +81,8 @@ EXPORT alt::IScriptRuntime* CreateScriptRuntime(alt::ICore* core)
 }
 ```
 
-The `alt::ICore` is the main interface for interacting with the server or client, it provides necessary functions like getting all entities, creating a vehicle, etc.
+The `alt::ICore` is the main interface for interacting with the server or client, it provides the necessary functions like getting all entities, creating a vehicle etc.
+
 
 > You should only ever create a single instance of your runtime in the entry point function, the function will only be called once when the server or client starts
 > and is the only place where you should create create an instance of your runtime.
