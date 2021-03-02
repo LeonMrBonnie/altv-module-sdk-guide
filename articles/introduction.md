@@ -49,7 +49,7 @@ The next step is to include the header files in your project somewhere. You can 
 ```
 
 That's it! Now you can use the classes and methods provided by the SDK. Don't forget to include this header in a common header file of your project,
-or include it in every file invidually.
+or include it in every file individually.
 Of course you can also just only include the header files that you currently need.
 
 ## How to use the Module SDK from C or languages that support C code
