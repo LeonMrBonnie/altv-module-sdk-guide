@@ -17,7 +17,7 @@ and should manage the script language runtime (e.g. your Python runtime) of your
 
 Your own script runtime needs to be instantiated and then registered to be available, as shown in the [last article](first-steps.md).
 
-> The script runtime is a singleton. There will always only be once instance of the module for its whole lifetime.
+> The script runtime is a singleton. There will always only be once instance of the class for its whole lifetime.
 
 ## How to create your own script runtime
 
