@@ -33,7 +33,7 @@ The interface has the following methods that can be implemented:
 | OnCreateBaseObject | Called every time a base object has been created            |
 | OnRemoveBaseObject | Called every time a base object has been removed            |
 
-> Remember that resources can be started and stopped at runtime, so you should do a proper cleanup on the `Stop` method. <br>
+> Remember that resources can be started and stopped at runtime, so you should do a proper cleanup in the `Stop` method.
 > And because of that you also should not start any resource logic in the constructor, use the `Start` method instead.
 
 Your custom resource class should look something like this:
