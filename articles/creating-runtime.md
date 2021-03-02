@@ -82,4 +82,4 @@ public:
 ## Creating your own resource
 
 This was it for now regarding the script runtime. Next, you should create your own class for resources. 
-You will learn about this in the [next article](#creating-resource.md).
+You will learn about this in the [next article](creating-resource.md).
