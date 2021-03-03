@@ -23,15 +23,15 @@ To create our own resource class, we need to extend from the `alt::IResource::Im
 
 The interface has the following methods that can be implemented:
 
-| Method             | Description                                                 |
-| ------------------ | ----------------------------------------------------------- |
-| MakeClient         | Reserved for assetpack resources, currently this has no use |
-| Start              | Called when the resource is started                         |
-| Stop               | Called when the resource is stopped                         |
-| OnEvent            | Called every time an event has been fired                   |
-| OnTick             | Called every tick                                           |
-| OnCreateBaseObject | Called every time a base object has been created            |
-| OnRemoveBaseObject | Called every time a base object has been removed            |
+| Method               | Description                                                 |
+| -------------------- | ----------------------------------------------------------- |
+| `MakeClient`         | Reserved for assetpack resources, currently this has no use |
+| `Start`              | Called when the resource is started                         |
+| `Stop`               | Called when the resource is stopped                         |
+| `OnEvent`            | Called every time an event has been fired                   |
+| `OnTick`             | Called every tick                                           |
+| `OnCreateBaseObject` | Called every time a base object has been created            |
+| `OnRemoveBaseObject` | Called every time a base object has been removed            |
 
 > Remember that resources can be started and stopped at runtime, so you should do a proper cleanup in the `Stop` method.
 > And because of that you also should not start any resource logic in the constructor, use the `Start` method instead.
