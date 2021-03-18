@@ -9,6 +9,8 @@ A guide for the usage of the [alt:V C++ Module SDK](https://github.com/altmp/cpp
 3. [Creating your own script runtime class](articles/creating-runtime.md)
 4. [Creating your own resource class](articles/creating-resource.md)
 5. [Handling events](articles/handling-events.md) 
+6. [MValues](articles/mvalues.md)
+7. [Final steps](articles/final-steps.md)
 
 ## Contribution
 
