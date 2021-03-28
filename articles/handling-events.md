@@ -24,7 +24,7 @@ Events are automatically dispatched by the alt:V core and need to be handled and
 ## How to handle events
 
 There are two ways to handle events. They can be either handled globally, or they are handled by each resource individually.
-Which of these two approaches is better depends on the circumstances of the scripting language the module is for.
+It is recommended the module handles the events per resource.
 
 Both approaches will be covered here.
 
@@ -58,6 +58,8 @@ alt::ICore::Instance().SubscribeEvent(alt::CEvent::Type::PLAYER_CONNECT, [](cons
 ```
 
 This method can also catch *all* incoming events by using the `alt::CEvent::Type::ALL` event type.
+
+> It is recommended to handle events per resource, handling events globally should mostly be used for debugging purposes.
 
 ### Handling events per resource
 
