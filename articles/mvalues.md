@@ -7,6 +7,7 @@ This article will explain what MValues are and how to use them in your module.
 1. [What are MValues](#what-are-mvalues)
 2. [The different MValue types](#the-different-mvalue-types)
 3. [How to create MValues](#how-to-create-mvalues)
+4. [Refs](#refs)
 
 ## What are MValues
 
@@ -72,7 +73,7 @@ Another example can be found in the [article about event handling](handling-even
 
 > All the methods to create MValues can be found [here](https://github.com/altmp/cpp-sdk/blob/dev/ICore.h#L61).
 
-## Final Steps
+## Refs
 
 Now you also know what an MValue is and how to use it.
-To see the final steps to make your module, view the [next article](final-steps.md).
+The next article will explain [what a Ref is and how to use it](refs.md).
