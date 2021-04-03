@@ -52,6 +52,9 @@ That's it! Now you can use the classes and methods provided by the SDK. Don't fo
 or include it in every file individually.
 Of course you can also just only include the header files that you currently need.
 
+> It is important that you build your module with the `/MT` flag and use release mode,
+> otherwise your module will have undefined behaviour.
+
 ## How to use the Module SDK from C or languages that support C code
 
 If you want to use the Module SDK but can not or don't want to use C++, but instead want to use C or any other language that supports C code (or C FFI) to write your module,
