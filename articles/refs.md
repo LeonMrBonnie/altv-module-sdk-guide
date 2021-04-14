@@ -19,8 +19,6 @@ They are however different, as the `shared_ptr` stores the refcount on the `shar
 `Ref` in the SDK stores the refcount on the stored object inside the `Ref`. That is also why any object stored in a `Ref` must
 inherit from [`alt::CRefCountable`](https://github.com/altmp/cpp-sdk/blob/master/CRefCountable.h).
 
-> IMPORTANT! When using refs make sure to NOT use references (`&`) otherwise the ref counting of the `Ref` will not behave as expected.
-
 ## How to use Refs
 
 To create a Ref you can simply use the `Ref` class. Once you create a ref with the pointer of your object you want to store,
