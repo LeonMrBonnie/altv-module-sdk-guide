@@ -11,12 +11,13 @@ This article will explain what Refs are and how to use them.
 ## What are Refs
 
 If you are familiar with modern C++ you probably know what **smart pointers** are, and how to use them.
-A `Ref` is the SDK implementation of the popular `shared_ptr` container from the standard C++ library.
-This specific implementation is used, for support across different compilers and systems.
+A `Ref` is similiar to the popular `shared_ptr` container from the standard library. 
+It stores a heap-allocated object and controls its lifetime and memory by using refcounting. 
+If there are no more instances of the `Ref` exist, the stored object will be freed automatically. 
 
-If you do not know what a `shared_ptr` is, it is a container class that can store an instance of an heap-allocated class,
-which you can pass and copy around, without having to worry about freeing the data yourself, as the class takes care of
-removing the memory once the pointer is not used anywhere anymore.
+They are however different, as the `shared_ptr` stores the refcount on the `shared_ptr` container, while the
+`Ref` in the SDK stores the refcount on the stored object inside the `Ref`. That is also why any object stored in a `Ref` must
+inherit from [`alt::CRefCountable`](https://github.com/altmp/cpp-sdk/blob/master/CRefCountable.h).
 
 > IMPORTANT! When using refs make sure to NOT use references (`&`) otherwise the ref counting of the `Ref` will not behave as expected.
 
@@ -32,7 +33,9 @@ as the `->` operator of the `Ref` is overloaded to access methods and properties
 
 A simple example of how to use a `Ref`:
 ```c++
-class MyClass
+// To store our class in a Ref,
+// we need to inherit from 'alt::CRefCountable'
+class MyClass : public alt::CRefCountable
 {
     int id;
 public:
